@@ -1,0 +1,43 @@
+{
+  "name": "@hermeticor/sdk-extension",
+  "version": "0.4.15",
+  "description": "Hermeticor SDK for browser extensions: event tracking from the service worker, content scripts and popup",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hermeticor/hermetica-extension.git"
+  },
+  "homepage": "https://github.com/hermeticor/hermetica-extension#readme",
+  "keywords": [
+    "hermeticor",
+    "hermetica",
+    "email",
+    "sms",
+    "outreach"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}
