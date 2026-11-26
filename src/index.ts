@@ -8,7 +8,7 @@ import { type ChromeLike, chromeOf, uuid } from './chrome.ts';
 
 export type { ChromeLike } from './chrome.ts';
 
-const SDK_VERSION = 'ext-0.4.15';
+const SDK_VERSION = 'ext-0.4.23';
 const KEY_ID = 'hm_ext_aid';
 const KEY_CONSENT = 'hm_ext_consent';
 const KEY_QUEUE = 'hm_ext_queue';

@@ -1,6 +1,6 @@
 {
   "name": "@hermeticor/sdk-extension",
-  "version": "0.4.15",
+  "version": "0.4.23",
   "description": "Hermeticor SDK for browser extensions: event tracking from the service worker, content scripts and popup",
   "license": "MIT",
   "type": "module",

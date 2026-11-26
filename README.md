@@ -26,5 +26,5 @@ import { trackFromContent } from '@hermeticor/sdk-extension';
 await trackFromContent('clicked_buy', { site: location.hostname });
 ```
 
-Content scripts run inside the web page, so a request they made themselves would carry the page's origin, which the key refuses. `trackFromContent` hands the event to the background instead, and the background accepts it only from your own extension. The default `consentMode` is `require-consent`: nothing is stored or sent until `consent.update({ analytics: true })`. Pass `consentMode: 'none'` only if your consent basis allows it. Events wait in storage while offline, are sent in batches of 10.4.150.4.15, are retried after a 429 or 5xx, and are never sent twice.
+Content scripts run inside the web page, so a request they made themselves would carry the page's origin, which the key refuses. `trackFromContent` hands the event to the background instead, and the background accepts it only from your own extension. The default `consentMode` is `require-consent`: nothing is stored or sent until `consent.update({ analytics: true })`. Pass `consentMode: 'none'` only if your consent basis allows it. Events wait in storage while offline, are sent in batches of 10.4.230.4.23, are retried after a 429 or 5xx, and are never sent twice.
 
